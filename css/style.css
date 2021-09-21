@@ -1,4 +1,22 @@
+body .nav {
+  margin: 20px 0;
+}
+
+body .nav .nav-item a {
+  color: black;
+}
+
+body .nav .nav-item a:hover {
+  background-color: #5db442;
+  color: white;
+}
+
+body .gallery .img_container {
+  margin: 15px 0;
+}
+
 body .gallery .img_container img {
   width: 100%;
+  height: 150px;
 }
 /*# sourceMappingURL=style.css.map */

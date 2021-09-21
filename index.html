@@ -15,69 +15,81 @@
     <nav>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
+              <a data-filter="all" class="nav-link" href="#">All</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a data-filter="day" class="nav-link" href="#">Daylight</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a data-filter="night" class="nav-link" href="#">Night</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a data-filter="flower" class="nav-link" href="#">Flower</a>
             </li>
+            <li class="nav-item">
+              <a data-filter="nature" class="nav-link" href="#">Nature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-shuffle href="#">Shuffle items</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" data-sortAsc href="#">Ascending </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-sortDesc href="#">Descending </a>
+            </li> -->
           </ul>
     </nav>
 
     <section class="gallery">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3"> 
+            <div class="row filter-container gallery_item">
+                <div class="col-md-3 filtr-item" data-category="all, day" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img1.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-3"> 
+                <div class="col-md-3 filtr-item" data-category="all, day" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img2.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-3"> 
+                <div class="col-md-3 filtr-item" data-category="all, day" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img3.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-3"> 
+                <div class="col-md-3 filtr-item" data-category="all, night" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img4.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-3"> 
+                <div class="col-md-3 filtr-item" data-category="all, nature" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img5.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-3"> 
+                <div class="col-md-3 filtr-item" data-category="all, flower" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img6.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-3"> 
+                <div class="col-md-3 filtr-item" data-category="all, flower" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img7.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-3"> 
+                <div class="col-md-3 filtr-item" data-category="all, flower" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img8.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-3"> 
+                <div class="col-md-3 filtr-item" data-category="all, flower" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img9.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-3"> 
+                <div class="col-md-3 filtr-item" data-category="all, nature" data-sort="value"> 
                     <div class="img_container">
                         <img src="img/img10.jpg" alt="">
                     </div>
@@ -89,6 +101,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js" integrity="sha512-7g5NUcH79A/d1+q+cj3KTJ31mCUPkD8f58sFEc98H5015295lT+ZBKWkaMeS6Snbu3m2VdfoW4VbSo9hOAJqYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
